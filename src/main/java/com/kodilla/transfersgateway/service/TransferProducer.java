@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class TransferPoducer {
+public class TransferProducer {
 
 	private static final String TRANSFERS_TOPIC = "transfers";
 	private final KafkaTemplate<String, Object> kafkaTemplate;

@@ -7,7 +7,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -30,16 +29,5 @@ public class AccountsProvider {
 						account.getCurrency(),
 						account.getAvailableFunds()
 				)));
-
-//		return accountsConnector.getAccounts()
-//				.getAccounts()
-//				.stream()
-//				.map(account -> new AccountDTO(
-//						account.getId(),
-//						account.getCustomerId(),
-//						account.getNrb(),
-//						account.getCurrency(),
-//						account.getAvailableFunds()
-//				)).collect(Collectors.toList());
 	}
 }
